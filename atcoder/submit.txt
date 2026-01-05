@@ -1,0 +1,32 @@
+/*
+ * Problem: A - Welcome to AtCoder
+ * URL: https://atcoder.jp/contests/practice/submit
+ * Platform: atcoder
+ */
+
+#include<bits/stdc++.h>
+bool Mbg;
+using namespace std;
+#define vec vector
+#define pb push_back
+#define eb emplace_back
+#define siz(vec) (int)((vec).size())
+#define all(vec) (vec).begin(),(vec).end()
+template<class T>
+void operator +=(vec<T> &lhs,const T &rhs){lhs.push_back(rhs);}
+#define pii pair<int,int>
+#define x first
+#define y second
+#define mp make_pair
+#define exc(expr) if(expr)continue;
+#define stop(expr) if(expr)break;
+#define ret(expr) if(expr)return;
+#define deb(var) cerr<<#var<<'='<<(var)<<"; "
+#define debl(var) cerr<<#var<<'='<<(var)<<";\n"
+#define ins insert
+#define era erase
+#define lb lower_bound
+#define ub upper_bound
+#define int long long
+#define inf (long long)(1.1e18)
+template<class T>
