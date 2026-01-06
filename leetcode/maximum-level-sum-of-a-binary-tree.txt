@@ -1,0 +1,19 @@
+/*
+ * Problem: 1161. Maximum Level Sum of a Binary Tree
+ * URL: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/?envType=daily-question&envId=2026-01-06
+ * Platform: leetcode
+ */
+
+class Solution:
+    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
+        self.lvl = {}
+        def getval(l, node):
+            if not node:
+                return
+            if l not in self.lvl:
+                self.lvl[l] = 0
+            self.lvl[l] += node.val
+            getval(l + 1, node.left)
+            getval(l + 1, node.right)
+        getval(1, root)
+        return max(self.lvl, key=self.lvl.get)
